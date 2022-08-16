@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.main-width{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 20px;
+
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../hays/images/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.hello{
+    font-size: 40px;
+    color: #721414;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo i{
+    height: 55px;
+    width: 55px;
+    background: transparent;
+    border: 2px solid #e40707;
+    color: #e40707;   
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav .hamb{
+    width: 35px;
+    height: 24px;
+    right: 3%;
+    top: 60px;
+    z-index: 5;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+nav .hamb span{
+    display: block;
+    background: #e40707;
+    width: 100%;
+    height: 3px;
+    transition: .3s;
+    transition-property: transform,opacity;
+}
+nav .hamb span:nth-child(2){
+    margin: 7px 0px;
+}
+nav .nav-list{
+    list-style: none;
+}
+nav .nav-list li{
+    display: inline-block;
+
+}
+nav .nav-list li a{
+    display: inline-block;
+    color: #eee;
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 500;
+}
+nav .nav-list li a:hover{
+    color: #e40707;
+    transition: .4s;
+}
+
+
+.container{
+    padding-top: 190px;
+}
+.container .hero-text{
+    margin-bottom: 40px;
+}
+.container .hero-text h1{
+    color: white;
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+span{
+    color: #e40707;
+}
+.container .hero-text h3{
+    color: #eee;
+
+    font-weight: 400;
+    font-size: 30px;
+}
+.container .hero-text p{
+    width: 440px;
+    max-width: 100%;
+    color: #eee;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 35px;
+}
+.social a:hover{
+    transform: scale(1.1);
+    background: #e40707;
+    transition: .4s;
+}
+button{
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500p;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid #e40707;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: white;
+    border: 2px solid white;
+    color: #e40707;
+    transition: .4s;
+
+}
+.bottom{
+    margin-top: 243px;
+    padding-bottom: 40px;
+}
+.bottom p{
+    color: #eee;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+
+/* flex */
+.sample{
+    margin: 40px;
+    color: #721414;
+    padding: -10% 800px;
+    font-size: 36px;
+    text-align: center;
+
+    
+}
+.container1{
+    display: flex;  
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    
+}
+.container1 .item{
+    width:270px;
+    height: 340px;
+    margin: 1px 10px;
+    border: 8px solid #721414;
+    padding: 100px;
+}
+
+.item{
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    
+}
+.items-1 {
+    border-radius: 10px 10px;
+    background-image: url(images/pos.jpg)
+    
+}
+
+.items-2 {
+    border-radius: 10px 10px;
+    width: 300px;
+    background-image: url(images/pos2.webp)
+}
+
+.items-3 {
+    border-radius: 10px 10px;
+    width: 300px;
+    background-image: url(images/pos4.jpg)
+}
+
+.items-4 {
+    border-radius: 10px 10px;
+    width: 300px;
+    background-image: url(images/pos5.jpg)
+}
+
+.items-5 {
+    border-radius: 10px 10px;
+    width: 300px;
+    background-image: url(images/pos6.jpg)
+}
+
+.items-6 {
+    border-radius: 10px 10px;
+    width: 300px;
+    background-image: url(images/poster1.webp)
+}
+
+/* Grid */
+
+
+
+@media screen and (max-width: 480px) {
+    nav .nav-list li a{
+        padding-top: 10px;
+        color: #eee;
+        margin-left: 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .sample{
+        font-size: 20px;
+    }
+    }
+
+
+
